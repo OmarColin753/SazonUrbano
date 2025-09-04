@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sazón Urbano | Contacto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Contacto</h1>
+    <nav>
+      <a href="Inicio.html">Inicio</a>
+      <a href="sobre.html">Sobre Nosotros</a>
+      <a href="productos.html">Productos</a>
+    </nav>
+  </header>
+
+  <!-- Texto de bienvenida -->
+  <div class="section-container">
+    <div class="text">
+      <h2>¿Querés ser parte de nuestra familia?</h2>
+      <p>
+        En <strong>Sazón Urbano</strong> creemos que el sabor se construye en equipo.  
+        Si compartís nuestra pasión por la buena comida, el servicio con calidez y la energía de lo urbano, 
+        este es tu lugar.  
+        💛 <br><br>
+        Postulate y descubrí la oportunidad de crecer en un ambiente donde cada día cuenta 
+        y cada persona importa.
+      </p>
+    </div>
+    <div class="image"><img src="contacto/contacto.png" alt="Equipo trabajando"></div>
+  </div>
+
+  <!-- Formulario de empleo -->
+  <div class="form-container">
+    <h2>📋 Aplicá ahora</h2>
+    <form action="enviar.php" method="post">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required>
+
+      <label for="puesto">Puesto al que aplicás:</label>
+      <select id="puesto" name="puesto" required>
+        <option value="">Seleccioná un puesto</option>
+        <option value="Cocinero">Cocinero</option>
+        <option value="Mesero">Mesero</option>
+        <option value="Repartidor">Repartidor</option>
+        <option value="Atención al Cliente">Atención al Cliente</option>
+      </select>
+
+      <label for="mensaje">Contanos sobre ti:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí un breve mensaje sobre tu experiencia o motivación..." required></textarea>
+
+      <button type="submit">Enviar solicitud</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Sazón Urbano. Todos los derechos reservados.</p>
+    <p>Síguenos en nuestras redes sociales | Facebook · Instagram · TikTok</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('imagenes/Madera_Negra.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #f8f4f0;
+    }
+
+    /* Encabezado */
+    header {
+      background: url('imagenes2/Encabezado.png') no-repeat center center;
+      background-size: cover;
+      padding: 100px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    header h1 {
+      font-family: 'Bangers', cursive;
+      position: relative;
+      font-size: 6em;
+      color: #e67e22;
+      margin: 0;
+      z-index: 1;
+    }
+
+    nav {
+      position: relative;
+      z-index: 3;
+      margin-top: 40px;
+      font-size: 120%;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #f8f4f0;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 1.2em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #e67e22;
+    }
+
+    /* Bloques */
+    .section-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: 50px auto;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      overflow: hidden;
+    }
+
+    .section-container:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .text {
+      flex: 1;
+      padding: 40px;
+      text-align: left;
+    }
+
+    .text h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #f39c12;
+    }
+
+    .text p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      color: #f8f4f0;
+    }
+
+    .image {
+      flex: 1;
+      min-height: 300px;
+      background: rgba(255,255,255,0.05);
+      border-left: 3px solid #f39c12;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #aaa;
+      font-style: italic;
+    }
+
+    .section-container:nth-child(even) .image {
+      border-left: none;
+      border-right: 3px solid #f39c12;
+    }
+
+    footer {
+      background: rgba(0,0,0,0.9);
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+      border-top: 3px solid #e67e22;
+    }
+
+    footer p {
+      margin: 5px 0;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+
+    img{
+        max-width: 500px;
+        height: auto;
+        border-radius: 12px; 
+    }
+
+    /* Formulario */
+.form-container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 40px;
+  background: rgba(0,0,0,0.8);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+  text-align: center;
+}
+
+.form-container h2 {
+  color: #f39c12;
+  margin-bottom: 25px;
+  font-size: 2em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+  color: #f8f4f0;
+}
+
+input, select, textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.1);
+  color: #ffffff;
+  font-size: 1em;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #ccc;
+}
+
+button {
+  margin-top: 15px;
+  padding: 14px;
+  font-size: 1.2em;
+  font-weight: bold;
+  background: linear-gradient(135deg, #e67e22, #f39c12);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(243, 156, 18, 0.5);
+}
